@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/.config/awesome/" "~/coffee_workspace/HAL_23/SOURCE-WORKTREES/HALTST_DMD/" "~/coffee_workspace/HAL_27/SOURCE-WORKTREES/HALTST_CCA/" "~/coffee_workspace/HAL_27/SOURCE-WORKTREES/HALTST_PVR/" "~/coffee_workspace/HAL_27/ConfSpec/" "~/.oh-my-zsh/")
+("~/.emacs.d/" "~/coffee_workspace/HAL_23/SOURCE-WORKTREES/HALTST_DMD/" "~/coffee_workspace/HAL_27/SOURCE-WORKTREES/HALTST_CCA/" "~/.config/awesome/" "~/coffee_workspace/HAL_27/SOURCE-WORKTREES/HALTST_PVR/" "~/coffee_workspace/HAL_27/ConfSpec/" "~/.oh-my-zsh/")
