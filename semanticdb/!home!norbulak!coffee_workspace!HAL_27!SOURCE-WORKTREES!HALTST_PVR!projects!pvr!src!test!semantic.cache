@@ -1,0 +1,141 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("exportTSTHAL_PVR.h" include (:system-flag t) nil [1369 1398])
+            ("exportTSTHAL_DMD.h" include (:system-flag t) nil [1399 1428])
+            ("exportTSTHAL_Tuner.h" include (:system-flag t) nil [1429 1460])
+            ("exportTSTHAL_AV.h" include (:system-flag t) nil [1461 1489])
+            ("exportTSTHAL_DKI.h" include (:system-flag t) nil [1490 1519])
+            ("exportTSTHAL_SVCPIPE.h" include (:system-flag t) nil [1520 1553])
+            ("exportTSTHAL_SRG.h" include (:system-flag t) nil [1554 1583])
+            ("exportTSTHAL_FS.h" include (:system-flag t) nil [1584 1612])
+            ("exportTSTHAL_CLK.h" include (:system-flag t) nil [1613 1642])
+            ("exportTSTHAL_TSPipe.h" include (:system-flag t) nil [1643 1675])
+            ("exportTSTHAL_PWR.h" include (:system-flag t) nil [1676 1705])
+            ("exportTSTHAL_CCA.h" include (:system-flag t) nil [1706 1735])
+            ("tsthal_pvr.h" include nil nil [1736 1759])
+            ("tsthal_pvr_const.h" include nil nil [1760 1789])
+            ("PVR_CCA_VERSION" variable (:constant-flag t) nil [1879 1894])
+            ("RECORD_FILE_NAME1" variable (:constant-flag t) nil [1914 1931])
+            ("tst_pvr_cfg_smp_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2483 2512])
+                    ("pvr_cfg" variable
+                       (:pointer 2
+                        :type ("pvr_test_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2548 2581]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2448 3616])
+            ("tst_pvr_cfg_smp_term" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4055 4084])
+                    ("pvr_cfg" variable
+                       (:pointer 2
+                        :type ("pvr_test_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4120 4153])
+                    ("record_and_live" variable (:type ("bool_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4189 4230]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [4020 4568])
+            ("test_PVR_Play_set_IFCP_keys_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5017 5044])
+                    ("scrambling_algo" variable (:type ("dsc_algorithm_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5089 5128])
+                    ("smp_id" variable (:type ("i32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5173 5203]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [4973 15892])
+            ("test_PVR_Play_set_IFCP_keys_1_AES_128_CBC_SMP_0" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16485 16512]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [16422 16669])
+            ("pvr_cca_unittests_play" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+ { \"PVR_CCA_PLAY_1\",
+   PVR_CCA_VERSION,
+   \"Playback of a Mono Chunk Recording of an AES CBC Scrambled Service Using IFCP With SMP Without CURS Restriction\",
+   test_PVR_Play_set_IFCP_keys_1_AES_128_CBC_SMP_0
+ },
+}"
+                :type ("TSTHAL_unittest_def_t" type (:type "class") nil nil))
+                nil [16671 16950])
+            ("tsthal_PVR_CCA_unittests_play" variable
+               (:constant-flag t
+                :default-value "{
+  \"Play\",
+  PVR_CCA_VERSION,
+  \"Test PVR with CCA Play related Services\",
+  pvr_config_parm,
+  &pvr_module_noauto,
+  pvr_cca_unittests_play,
+  sizeof(pvr_cca_unittests_play)/sizeof(TSTHAL_unittest_def_t),
+  TSTHAL_PVR_enums
+}"
+                :type ("TSTHAL_module_def_t" type (:type "class") nil nil))
+                nil [16952 17238])
+            ("tsthal_PVR_CCA_modules" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  &tsthal_PVR_CCA_unittests_play,
+  NULL
+}"
+                :type ("TSTHAL_module_def_t" type (:type "class") nil nil))
+                nil [17262 17368])
+            ("TSTHAL_PVR_CCA_modulecontainer" variable
+               (:constant-flag t
+                :default-value "{
+  \"PVR with CCA\",
+  PVR_CCA_VERSION,
+  \"Test the functionalities of the PVR HAL on a CCA system\",
+  tsthal_PVR_CCA_modules,
+  NULL
+}"
+                :type ("TSTHAL_modulecontainer_def_t" type (:type "class") nil nil))
+                nil [17421 17624]))          
+      :file "tsthal_pvr_cca_tst.c"
+      :pointmax 17625
+      :fsize 17624
+      :lastmodtime '(23603 34384 257038 353000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PVR_CCA_VERSION" . ((string "\"1.0.0\"" 1897 . 1904)))
+          ("RECORD_FILE_NAME1" . ((string "\"/tsthal_rec1\"" 1950 . 1964)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "tsthal_pvr.h"
+      :fsize 23270
+      :lastmodtime '(23603 34384 257038 353000))
+    (semanticdb-table "semanticdb-table"
+      :file "tsthal_pvr_const.h"
+      :fsize 2178
+      :lastmodtime '(23603 34384 257038 353000)))
+  :file "!home!norbulak!coffee_workspace!HAL_27!SOURCE-WORKTREES!HALTST_PVR!projects!pvr!src!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

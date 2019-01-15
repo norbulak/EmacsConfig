@@ -1,0 +1,2112 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("exportTSTHAL_DMD.h" include (:system-flag t) nil [1111 1140]))          
+      :file "tsthal_dmd.c"
+      :pointmax 1142
+      :fsize 1141
+      :lastmodtime '(23607 9337 615207 302000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("exportTSTHAL_DMD.h" include (:system-flag t) nil [746 775])
+            ("exportTSTHAL_Tuner.h" include (:system-flag t) nil [776 807])
+            ("exportTSTHAL_DKI.h" include (:system-flag t) nil [808 837])
+            ("exportTSPIPE.h" include (:system-flag t) nil [838 863])
+            ("exportTSTHAL_OS.h" include (:system-flag t) nil [864 892])
+            ("tsthal_tuner.h" include nil nil [894 919])
+            ("TSTHAL_MAX_TUNERS" variable (:constant-flag t) nil [929 946])
+            ("tunerHALAPI" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("tsthal_tuner_API_t" type (:type "class") nil nil))
+                nil [950 1007])
+            ("tsthal_tunerCount" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint_t" type (:type "class") nil nil))
+                nil [1009 1045])
+            ("tsthal_tuner_findHALAPI" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1098 1125]))                  
+                :type ("tsthal_tuner_API_t" type (:type "class") nil nil))
+                nil [1047 2349])
+            ("tsthal_tuner_init" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2807 2834])
+                    ("handle" variable
+                       (:pointer 2
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2835 2863]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2782 3620])
+            ("tsthal_tuner_connect" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4090 4117])
+                    ("handle" variable
+                       (:pointer 1
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4118 4145]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [4062 4470])
+            ("tsthal_tuner_disconnect" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4950 4977])
+                    ("handle" variable
+                       (:pointer 1
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4978 5005]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [4919 5333])
+            ("tsthal_tuner_term" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5694 5721])
+                    ("handle" variable
+                       (:pointer 1
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5722 5749]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [5669 6218])
+            ("TUNER_get_tspipe_input" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6726 6753])
+                    ("type" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6754 6764])
+                    ("instance" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6765 6779]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [6696 7051])
+            ("tsthal_tuner_registerAPI" function
+               (:arguments 
+                  ( ("papi" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tsthal_tuner_API_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7465 7496]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [7433 7766]))          
+      :file "tsthal_tuner.c"
+      :pointmax 7771
+      :fsize 7770
+      :lastmodtime '(23607 9337 615207 302000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TSTHAL_MAX_TUNERS" . ((number "2" 947 . 948)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("TSTHAL_TUNER_H" variable (:constant-flag t) nil [776 790])
+            ("exportTSTHAL_DMD.h" include (:system-flag t) nil [792 821])
+            ("exportTSTHAL_Tuner.h" include (:system-flag t) nil [822 853])
+            ("tsthal_tuner_cfg.h" include nil nil [855 884])
+            ("tsthal_dmd_params_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("tsthal_dmd_params_s" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [928 1139])
+            ("tsthal_dmd_params_s" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("pDelivery" variable (:type ("dmd_delivery_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [967 992])
+                    ("device_type" variable (:type ("dmd_device_type_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [995 1025])
+                    ("sema" variable
+                       (:pointer 1
+                        :type ("DKI_sid_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1028 1045])
+                    ("receivedEvent" variable (:type ("sint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1048 1069])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1072 1099])
+                    ("reqData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1102 1117]))                  )
+                (reparse-symbol extern-c-contents) [928 1139]))          
+      :file "tsthal_tuner.h"
+      :pointmax 1228
+      :fsize 1227
+      :lastmodtime '(23607 9337 615207 302000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TSTHAL_TUNER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("exportTSTHAL_DMD.h" include (:system-flag t) nil [745 774])
+            ("exportTSTHAL_Tuner.h" include (:system-flag t) nil [775 806])
+            ("exportTSTHAL_DKI.h" include (:system-flag t) nil [807 836])
+            ("exportTSTHAL_OS.h" include (:system-flag t) nil [837 865])
+            ("tsthal_tuner_dmd.h" include nil nil [867 896])
+            ("g_unique_open" variable
+               (:typemodifiers ("static")
+                :default-value "DKI_FALSE"
+                :type ("bool_t" type (:type "class") nil nil))
+                nil [921 961])
+            ("g_dmd_opened" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint_t" type (:type "class") nil nil))
+                nil [962 993])
+            ("dmdOpen" variable
+               (:typemodifiers ("static")
+                :default-value "-1"
+                :type ("uint_t" type (:type "class") nil nil))
+                nil [1036 1063])
+            ("notifyTsthalDmdCallback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("dmd_callback_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1123 1151]))                  
+                :type "void")
+                nil [1087 1152])
+            ("DemodSetNotify" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1182 1209])
+                    ("subscriberData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1210 1231])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1232 1248]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [1153 1249])
+            ("DemodResetNotify" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1281 1308])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1309 1325]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [1250 1326])
+            ("tsthal_tuner_init_dmd" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1703 1730])
+                    ("handle" variable
+                       (:pointer 2
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1731 1759]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [1674 3693])
+            ("tsthal_tuner_term_dmd" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4068 4095])
+                    ("handle" variable
+                       (:pointer 1
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4096 4123]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [4039 5491])
+            ("tsthal_tuner_open_dmd" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5839 5866])
+                    ("dmd_id" variable (:type "int") (reparse-symbol arg-sub-list) [5867 5878]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [5810 6702])
+            ("tsthal_tuner_close_dmd" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7086 7113])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7114 7130]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [7056 7864])
+            ("tsthal_tuner_connect_dmd" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8247 8274])
+                    ("handle" variable
+                       (:pointer 1
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8275 8302]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [8215 11737])
+            ("tsthal_tuner_disconnect_dmd" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12169 12196])
+                    ("handle" variable
+                       (:pointer 1
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12197 12224]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [12134 13487])
+            ("notifyTsthalDmdCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("dmd_callback_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13895 13923]))                  
+                :type "void")
+                nil [13859 15138])
+            ("DemodSetNotify" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15541 15568])
+                    ("subscriberData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15569 15590])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15624 15640]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [15512 16005])
+            ("DemodResetNotify" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16420 16447])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16448 16464]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [16389 16802]))          
+      :file "tsthal_tuner_dmd.c"
+      :pointmax 16805
+      :fsize 16804
+      :lastmodtime '(23607 9337 615207 302000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("TSTHAL_TUNER_DMD_H" variable (:constant-flag t) nil [780 798])
+            ("exportTSTHAL_DMD.h" include (:system-flag t) nil [800 829])
+            ("tsthal_tuner.h" include nil nil [830 855])
+            ("tsthal_tuner_disconnect_dmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("STATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1349 1376])
+                    ("handle" variable
+                       (:pointer 1
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1377 1404]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1314 1405])
+            ("tsthal_tuner_connect_dmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("STATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1257 1284])
+                    ("handle" variable
+                       (:pointer 1
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1285 1312]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1225 1313])
+            ("tsthal_tuner_term_dmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("STATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1167 1194])
+                    ("handle" variable
+                       (:pointer 1
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1195 1222]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1138 1223])
+            ("tsthal_tuner_init_dmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("STATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1080 1107])
+                    ("handle" variable
+                       (:pointer 2
+                        :type ("tsthal_tuner_hnd_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1108 1136]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1051 1137])
+            ("tsthal_tuner_close_dmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("STATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1004 1031])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1032 1048]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [974 1049])
+            ("tsthal_tuner_open_dmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("STATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [928 955])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [956 972]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [899 973]))          
+      :file "tsthal_tuner_dmd.h"
+      :pointmax 1513
+      :fsize 1512
+      :lastmodtime '(23607 9337 615207 302000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TSTHAL_TUNER_DMD_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("TSTHAL_TUNER_CFG_H" variable (:constant-flag t) nil [869 887])
+            ("exportTSTHAL_DMD.h" include (:system-flag t) nil [889 918])
+            ("tsthal_tuner_filldelivery_params_dmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5449 5477])
+                    ("cfg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5521 5549])
+                    ("device_type" variable (:type ("dmd_device_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5593 5629])
+                    ("pDelivery" variable
+                       (:pointer 1
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5673 5707]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5406 5708])
+            ("tsthal_tuner_freecfg_dmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("STATUS" type (:type "class") nil nil)
+                :arguments 
+                  ( ("cfg" variable
+                       (:pointer 1
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5381 5403]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5348 5404])
+            ("tsthal_tuner_fillcfg_dmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5318 5345]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5274 5346])
+            ("tsthal_getcfg_dmd_open" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("bool_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5266 5271]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5236 5272])
+            ("tsthal_dmd_cfg_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("unique_open" variable (:type ("bool_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5098 5117])
+                          ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5120 5136])
+                          ("sat" variable (:type ("tsthal_sat_cfg_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5139 5160])
+                          ("terr" variable (:type ("tsthal_terr_cfg_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5163 5186])
+                          ("cable" variable (:type ("tsthal_cable_cfg_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5189 5214]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [5079 5234])
+            ("tsthal_ip_cfg_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("del" variable (:type ("tsthal_ip_cfg_delivery_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5029 5058]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [5010 5077])
+            ("tsthal_cable_cfg_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("del1" variable (:type ("tsthal_cable_cfg_delivery_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4874 4907])
+                          ("del2" variable (:type ("tsthal_cable_cfg_delivery_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4910 4943])
+                          ("cable_frequency_no_signal" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4946 4986]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [4856 5008])
+            ("tsthal_terr_cfg_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("terr_type" variable (:type ("dmd_terrestrial_dvbtype_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4618 4654])
+                          ("dvbt" variable (:type ("tsthal_terr_cfg_dvbt_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4693 4722])
+                          ("dvbt2" variable (:type ("tsthal_terr_cfg_dvbt2_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4749 4779])
+                          ("dmd_pwr" variable (:type ("dmd_source_power_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4806 4833]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [4599 4854])
+            ("tsthal_terr_cfg_dvbt2_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("del1" variable (:type ("tsthal_terr_delivery_dvbt2_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4436 4470])
+                          ("del2" variable (:type ("tsthal_terr_delivery_dvbt2_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4473 4507])
+                          ("terr_frequency_no_signal" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4510 4542])
+                          ("scan" variable (:type ("tsthal_cfg_scan_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4545 4568]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [4417 4597])
+            ("tsthal_terr_cfg_dvbt_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("del1" variable (:type ("tsthal_terr_delivery_dvbt_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4259 4292])
+                          ("del2" variable (:type ("tsthal_terr_delivery_dvbt_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4295 4328])
+                          ("terr_frequency_no_signal" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4331 4363])
+                          ("scan" variable (:type ("tsthal_cfg_scan_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4366 4389]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [4240 4415])
+            ("tsthal_sat_cfg_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("del1" variable (:type ("tsthal_sat_cfg_delivery_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4058 4089])
+                          ("del2" variable (:type ("tsthal_sat_cfg_delivery_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4092 4123])
+                          ("dmd_pwr" variable (:type ("dmd_source_power_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4126 4153])
+                          ("sat_frequency_no_signal" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4156 4189])
+                          ("satcr" variable (:type ("tsthal_satcr_cfg_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4193 4218]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [4039 4238])
+            ("tsthal_satcr_cfg_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("sat_satcr_config" variable (:type ("dmd_satcr_config_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3937 3973])
+                          ("sat_satcr_frequency" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3976 4015]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [3918 4037])
+            ("tsthal_ip_cfg_delivery_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("address" variable (:type ("dmd_ip_address_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3588 3613])
+                          ("port" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3616 3638])
+                          ("address2" variable (:type ("dmd_ip_address_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3683 3709])
+                          ("port2" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3712 3735])
+                          ("address_invalid" variable (:type ("dmd_ip_address_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3780 3813])
+                          ("port_invalid" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3816 3846]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [3569 3916])
+            ("tsthal_cable_cfg_delivery_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("frequency" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3290 3321])
+                          ("fec_rate_outer" variable (:type ("dmd_fec_rate_outer_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3347 3383])
+                          ("modulation" variable (:type ("dmd_modulation_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3409 3441])
+                          ("symbol_rate" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3476 3509]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [3271 3567])
+            ("tsthal_terr_delivery_dvbt2_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("frequency" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2819 2854])
+                          ("plp_id" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2886 2918])
+                          ("guard_interval" variable (:type ("dmd_guard_interval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2950 2990])
+                          ("transmission_mode" variable (:type ("dmd_transmission_mode_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3022 3065])
+                          ("T2_system_id" variable (:type ("ushort_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3101 3139])
+                          ("bandwidth" variable (:type ("dmd_bandwidth_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3171 3206]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [2802 3269])
+            ("tsthal_terr_delivery_dvbt_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("frequency" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2108 2143])
+                          ("constellation" variable (:type ("dmd_constellation_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2177 2216])
+                          ("hierarchy" variable (:type ("dmd_hierarchy_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2253 2288])
+                          ("hp_lp" variable (:type ("dmd_hierarchy_hplp_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2322 2353])
+                          ("HP_code_rate" variable (:type ("dmd_fec_rate_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2400 2438])
+                          ("LP_code_rate" variable (:type ("dmd_fec_rate_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2474 2512])
+                          ("guard_interval" variable (:type ("dmd_guard_interval_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2548 2588])
+                          ("transmission_mode" variable (:type ("dmd_transmission_mode_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2622 2665])
+                          ("bandwidth" variable (:type ("dmd_bandwidth_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2703 2738]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [2089 2800])
+            ("tsthal_sat_cfg_delivery_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("frequency" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1296 1330])
+                          ("symbol_rate" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1367 1403])
+                          ("modulation_system" variable (:type ("dmd_modulation_system_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1442 1484])
+                          ("modulation" variable (:type ("dmd_modulation_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1521 1556])
+                          ("polarization" variable (:type ("dmd_polarization_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1603 1640])
+                          ("fec_rate" variable (:type ("dmd_fec_rate_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1685 1718])
+                          ("roll_off" variable (:type ("dmd_rolloff_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1758 1791])
+                          ("lnb_tone_state" variable (:type ("dmd_lnb_tone_state_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1835 1874])
+                          ("diseqc_port" variable (:type ("dmd_diseqc_port_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1911 1947])
+                          ("band" variable (:type ("dmd_satellite_band_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1984 2013]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1277 2087])
+            ("tsthal_cfg_scan_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("start_frequency" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [981 1004])
+                          ("end_frequency" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1060 1081])
+                          ("step_frequency" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1133 1155])
+                          ("bandwidth" variable (:type ("dmd_bandwidth_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1212 1238]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [962 1275]))          
+      :file "tsthal_tuner_cfg.h"
+      :pointmax 5799
+      :fsize 5798
+      :lastmodtime '(23607 9337 615207 302000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TSTHAL_TUNER_CFG_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("exportTSTHAL_DMD.h" include (:system-flag t) nil [835 864])
+            ("exportTSTHAL_DKI.h" include (:system-flag t) nil [865 894])
+            ("tsthal_tuner_cfg.h" include nil nil [896 925])
+            ("tsthal_tuner_filldelivery_params_dmd" function
+               (:arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1403 1431])
+                    ("cfg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1474 1502])
+                    ("device_type" variable (:type ("dmd_device_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1545 1581])
+                    ("pDelivery" variable
+                       (:pointer 1
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1624 1658]))                  
+                :type "void")
+                nil [1361 5924])
+            ("tsthal_tuner_fillcfg_dmd" function
+               (:pointer 1
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6361 6388]))                  
+                :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                nil [6318 16936])
+            ("tsthal_tuner_freecfg_dmd" function
+               (:arguments 
+                  ( ("cfg" variable
+                       (:pointer 1
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17399 17421]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [17367 17468])
+            ("tsthal_getcfg_dmd_open" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17854 17859]))                  
+                :type ("bool_t" type (:type "class") nil nil))
+                nil [17824 17939]))          
+      :file "tsthal_tuner_cfg.c"
+      :pointmax 17943
+      :fsize 17942
+      :lastmodtime '(23607 9337 615207 302000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("exportTSTHAL_DMD.h" include (:system-flag t) nil [1131 1160])
+            ("exportTSTHAL_DKI.h" include (:system-flag t) nil [1161 1190])
+            ("tsthal_tuner_dmd.h" include nil nil [1192 1221])
+            ("MAX_BUFFER_SIZE" variable (:constant-flag t) nil [1314 1329])
+            ("DMD_VERSION" variable (:constant-flag t) nil [1342 1353])
+            ("connect_timeout" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "5000"
+                :type ("DKI_systime_t" type (:type "class") nil nil))
+                nil [1363 1413])
+            ("EVENT_QUEUE_SIZE" variable (:constant-flag t) nil [1586 1602])
+            ("tsthal_dmdEvent_s" type
+               (:members 
+                  ( ("event" variable (:type ("sint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1643 1660])
+                    ("reqData" variable (:type ("uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1663 1682]))                  
+                :type "struct")
+                nil [1606 1703])
+            ("tsthal_dmdEvent_t" type
+               (:typedef ("tsthal_dmdEvent_s" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1606 1703])
+            ("g_event_queue" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("tst_dki_mq_t" type (:type "class") nil nil))
+                nil [1785 1827])
+            ("g_unittest_ctx" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                nil [1828 1878])
+            ("notifyTsthalDmdCallback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("dmd_callback_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2078 2106]))                  
+                :type "void")
+                nil [2042 2107])
+            ("DemodSetNotify" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2137 2164])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2165 2181]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2108 2182])
+            ("get_native_test_config" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2231 2258]))                  
+                :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                nil [2183 2259])
+            ("DMD_Open_1" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2285 2312]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2260 2313])
+            ("DMD_Connect_1" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2342 2369]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2314 2370])
+            ("DMD_Connect_2" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2399 2426]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2371 2427])
+            ("DMD_Connect_3" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2456 2483]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2428 2484])
+            ("DMD_Connect_5" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2513 2540]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2485 2541])
+            ("DMD_Connect_7" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2570 2597]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2542 2598])
+            ("DMD_Connect_8" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2627 2654]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2599 2655])
+            ("DMD_Disconnect_1" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2687 2714]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2656 2715])
+            ("DMD_Disconnect_3" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2747 2774]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2716 2775])
+            ("DMD_SysGet_1" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2803 2830]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2776 2831])
+            ("DMD_SysGet_2" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2859 2886]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2832 2887])
+            ("DMD_SysGet_3" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2915 2942]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2888 2943])
+            ("DMD_SysGet_4" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2971 2998]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [2944 2999])
+            ("DMD_SysSet_1" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3027 3054]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [3000 3055])
+            ("DMD_SysSet_2" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3083 3110]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [3056 3111])
+            ("DMD_SysSet_3" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3139 3166]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [3112 3167])
+            ("DMD_SysSet_5" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3195 3222]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [3168 3223])
+            ("DMD_SysSet_6" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3251 3278]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [3224 3279])
+            ("DMD_TestScenario_1" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3313 3340]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [3280 3341])
+            ("dumpDMDDelivery" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3371 3399])
+                    ("dmddelivery" variable
+                       (:pointer 1
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3433 3462]))                  
+                :type "void")
+                nil [3342 3463])
+            ("dumpDMDScan" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3488 3516])
+                    ("dmdscan" variable
+                       (:pointer 1
+                        :type ("dmd_scan_terrestrial_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3541 3574]))                  
+                :type "void")
+                nil [3464 3575])
+            ("dumpDMDSignalData" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3607 3635])
+                    ("dmdsignaldata" variable
+                       (:pointer 1
+                        :type ("dmd_signal_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3671 3710]))                  
+                :type "void")
+                nil [3576 3711])
+            ("fill_delivery2_params" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3746 3773])
+                    ("cfg" variable
+                       (:pointer 1
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3808 3835])
+                    ("device_type" variable (:type ("dmd_device_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3870 3905])
+                    ("pDelivery" variable
+                       (:pointer 1
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3940 3973]))                  
+                :type "void")
+                nil [3712 3974])
+            ("fill_delivery_wrong_params" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4014 4041])
+                    ("cfg" variable
+                       (:pointer 1
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4081 4108])
+                    ("device_type" variable (:type ("dmd_device_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4148 4183])
+                    ("pDelivery" variable
+                       (:pointer 1
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4223 4256]))                  
+                :type "void")
+                nil [3975 4257])
+            ("fill_scan_params" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4287 4315])
+                    ("cfg" variable
+                       (:pointer 1
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4345 4373])
+                    ("pScan" variable
+                       (:pointer 1
+                        :type ("dmd_scan_terrestrial_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4403 4433]))                  
+                :type "void")
+                nil [4258 4434])
+            ("init_dmd" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4459 4486])
+                    ("dmd_id" variable
+                       (:pointer 1
+                        :type ("dmd_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4487 4504])
+                    ("cfg" variable
+                       (:pointer 2
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4523 4546])
+                    ("pDelivery" variable
+                       (:pointer 2
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4547 4574]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [4435 4575])
+            ("term_dmd" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4600 4627])
+                    ("cfg" variable
+                       (:pointer 2
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4628 4651])
+                    ("pDelivery" variable
+                       (:pointer 2
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4679 4706]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [4576 4707])
+            ("open_dmd" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4731 4758])
+                    ("cfg" variable
+                       (:pointer 1
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4759 4781])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4809 4825])
+                    ("device_type" variable
+                       (:pointer 1
+                        :type ("dmd_device_type_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4826 4857]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [4708 4858])
+            ("close_dmd" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4883 4910])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4911 4927])
+                    ("notify" variable
+                       (:pointer 1
+                        :type ("dmd_notify_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4955 4982]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [4859 4983])
+            ("connect_dmd" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5010 5037])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5038 5054])
+                    ("pDelivery" variable
+                       (:pointer 1
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5081 5107])
+                    ("req_id" variable
+                       (:pointer 1
+                        :type ("uint_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5108 5123]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [4984 5124])
+            ("disconnect_dmd" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5154 5181])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5182 5198]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [5125 5199])
+            ("get_new_req_id" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5394 5399]))                  
+                :type ("uint_t" type (:type "class") nil nil))
+                nil [5365 5451])
+            ("dumpDMDDelivery" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5804 5832])
+                    ("dmddelivery" variable
+                       (:pointer 1
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5868 5897]))                  
+                :type "void")
+                nil [5775 12897])
+            ("dumpDMDScan" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13259 13287])
+                    ("dmdscan" variable
+                       (:pointer 1
+                        :type ("dmd_scan_terrestrial_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13288 13321]))                  
+                :type "void")
+                nil [13234 13972])
+            ("dumpDMDSignalData" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14336 14364])
+                    ("dmdsignaldata" variable
+                       (:pointer 1
+                        :type ("dmd_signal_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14400 14439]))                  
+                :type "void")
+                nil [14305 18805])
+            ("dumpDMDnotifyParam" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19173 19201])
+                    ("dmd_notify_param" variable
+                       (:pointer 1
+                        :type ("dmd_notify_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19240 19278]))                  
+                :type "void")
+                nil [19141 19592])
+            ("notifyTsthalDmdCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("dmd_callback_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19971 19999]))                  
+                :type "void")
+                nil [19935 21006])
+            ("DemodSetNotify" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21414 21441])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21475 21491]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [21385 21927])
+            ("get_native_test_config" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22424 22451]))                  
+                :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                nil [22376 22695])
+            ("fill_delivery2_params" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23151 23178])
+                    ("cfg" variable
+                       (:pointer 1
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23213 23240])
+                    ("device_type" variable (:type ("dmd_device_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23275 23310])
+                    ("pDelivery" variable
+                       (:pointer 1
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23345 23378]))                  
+                :type "void")
+                nil [23117 27226])
+            ("fill_delivery_wrong_params" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27692 27719])
+                    ("cfg" variable
+                       (:pointer 1
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27759 27786])
+                    ("device_type" variable (:type ("dmd_device_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27826 27861])
+                    ("pDelivery" variable
+                       (:pointer 1
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27901 27934]))                  
+                :type "void")
+                nil [27653 31883])
+            ("fill_scan_params" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32358 32386])
+                    ("cfg" variable
+                       (:pointer 1
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32416 32444])
+                    ("pScan" variable
+                       (:pointer 1
+                        :type ("dmd_scan_terrestrial_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32474 32504]))                  
+                :type "void")
+                nil [32329 33329])
+            ("init_dmd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33355 33382])
+                    ("dmd_id" variable
+                       (:pointer 1
+                        :type ("dmd_id_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33383 33400])
+                    ("cfg" variable
+                       (:pointer 2
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33419 33442])
+                    ("pDelivery" variable
+                       (:pointer 2
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33443 33470]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [33331 34303])
+            ("term_dmd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34329 34356])
+                    ("cfg" variable
+                       (:pointer 2
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34384 34407])
+                    ("pDelivery" variable
+                       (:pointer 2
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34435 34462]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [34305 34870])
+            ("open_dmd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34895 34922])
+                    ("cfg" variable
+                       (:pointer 1
+                        :type ("tsthal_dmd_cfg_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34923 34945])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34973 34989])
+                    ("device_type" variable
+                       (:pointer 1
+                        :type ("dmd_device_type_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34990 35021]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [34872 36644])
+            ("close_dmd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36670 36697])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36698 36714])
+                    ("notify" variable
+                       (:pointer 1
+                        :type ("dmd_notify_param_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36742 36769]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [36646 37262])
+            ("connect_dmd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37291 37318])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37319 37335])
+                    ("pDelivery" variable
+                       (:pointer 1
+                        :type ("dmd_delivery_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37366 37392])
+                    ("r_id" variable
+                       (:pointer 1
+                        :type ("uint_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37393 37406]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [37265 39890])
+            ("disconnect_dmd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39921 39948])
+                    ("dmd_id" variable (:type ("dmd_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39949 39965]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [39892 41429])
+            ("DMD_Open_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41880 41907]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [41855 43733])
+            ("DMD_Connect_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44134 44161]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [44106 46282])
+            ("DMD_Connect_2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46845 46872]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [46817 48671])
+            ("DMD_Connect_3" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49159 49186]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [49131 50915])
+            ("DMD_Connect_5" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51412 51439]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [51384 53033])
+            ("DMD_Connect_7" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53441 53468]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [53413 58476])
+            ("DMD_Connect_8" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58891 58918]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [58863 63967])
+            ("DMD_Disconnect_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64378 64405]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [64347 65995])
+            ("DMD_Disconnect_3" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66419 66446]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [66388 70292])
+            ("DMD_SysGet_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70768 70795]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [70741 72493])
+            ("DMD_SysGet_2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72937 72964]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [72910 75841])
+            ("DMD_SysGet_3" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76295 76322]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [76268 81110])
+            ("DMD_SysGet_4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81599 81626]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [81572 84506])
+            ("DMD_SysSet_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85030 85057]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [85003 89903])
+            ("DMD_SysSet_2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90455 90482]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [90428 94966])
+            ("DMD_SysSet_3" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [95420 95447]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [95393 99415])
+            ("DMD_SysSet_4" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99813 99840]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [99786 104138])
+            ("DMD_SysSet_5" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104739 104766]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [104712 110820])
+            ("DMD_SysSet_6" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111566 111593]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [111539 120270])
+            ("DMD_TestScenario_1" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120791 120818]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [120758 124178])
+            ("DMD_Connect_6" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("TSTHAL_unittest_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124644 124671]))                  
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [124616 128621])
+            ("dmd_module_auto" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  \"Automaticaly performs all DEMOD tests\",
+  DKI_FALSE
+}"
+                :type ("TSTHAL_module_auto_t" type (:type "class") nil nil))
+                nil [128655 128766])
+            ("dmd_unittests_open" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  { \"DMD_1\",
+    DMD_VERSION,
+    \"SysGet to get device type, demod count\",
+    DMD_SysGet_1
+  },
+  { \"DMD_2\",
+    DMD_VERSION,
+    \"check open and close for all demod ids\",
+    DMD_Open_1
+  },
+}"
+                :type ("TSTHAL_unittest_def_t" type (:type "class") nil nil))
+                nil [128882 129138])
+            ("dmd_unittests_connect" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  { \"DMD_5\",
+    DMD_VERSION,
+    \"DMD Connect to lock a frequency for all demod ids\",
+    DMD_Connect_1
+  },
+  { \"DMD_6\",
+    DMD_VERSION,
+    \"DMD Connect to lock other device type frequency \",
+    DMD_Connect_2
+  },
+  { \"DMD_7\",
+    DMD_VERSION,
+   \"Lock the DMOD to a frequency other than locked\",
+    DMD_Connect_3
+  },
+  { \"DMD_8\",
+    DMD_VERSION,
+    \"Lock the DMOD to the same locked frequency\",
+    DMD_Connect_5
+  },
+  { \"DMD_9\",
+    DMD_VERSION,
+    \"SysGet to get the status after Connect \",
+    DMD_SysGet_4
+  },
+  { \"DMD_10\",
+    DMD_VERSION,
+    \"SysGet to get signal data\",
+    DMD_SysGet_2
+  },
+  { \"DMD_23\",
+    DMD_VERSION,
+    \"Check connection request data\",
+    DMD_Connect_6
+  },
+  { \"DMD_25\",
+    DMD_VERSION,
+    \"Call DMD Connect twice with the same parameters to lock a frequency\",
+    DMD_Connect_7
+  },
+  { \"DMD_26\",
+    DMD_VERSION,
+    \"Call DMD Connect twice with the same parameters to lock a frequency on different demods\",
+    DMD_Connect_8
+  },
+
+}"
+                :type ("TSTHAL_unittest_def_t" type (:type "class") nil nil))
+                nil [129140 130188])
+            ("dmd_unittests_events" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  { \"DMD_11\",
+    DMD_VERSION,
+    \"Scenario to generate Carrier lost and retrieved event\",
+    DMD_SysSet_2
+  },
+  { \"DMD_12\",
+    DMD_VERSION,
+    \"Scenarios to test Carrier lost and retrieved events\",
+    DMD_SysSet_5
+  },
+  { \"DMD_13\",
+    DMD_VERSION,
+    \"Added Scenarios to test Carrierlost and retrieved events\",
+    DMD_SysSet_6
+  },
+  { \"DMD_14\",
+    DMD_VERSION,
+    \"Disconnect while demod in locked and not locked state\",
+    DMD_Disconnect_3
+  },
+}"
+                :type ("TSTHAL_unittest_def_t" type (:type "class") nil nil))
+                nil [130190 130715])
+            ("dmd_unittests_scan" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  { \"DMD_15\",
+    DMD_VERSION,
+    \"Loop the scan continue till the finished event\",
+    DMD_SysSet_1
+  },
+  { \"DMD_16\",
+    DMD_VERSION,
+    \"SysSet to abort the scan\",
+    DMD_SysSet_3
+  },
+  { \"DMD_17\",
+    DMD_VERSION,
+    \"Get the scan completion percentage\",
+    DMD_SysGet_3
+  },
+  { \"DMD_24\",
+    DMD_VERSION,
+    \"Abort the scan after receiving DMD_EV_SCAN_NEXT\",
+    DMD_SysSet_4
+  },
+}"
+                :type ("TSTHAL_unittest_def_t" type (:type "class") nil nil))
+                nil [130717 131174])
+            ("dmd_unittests_stress" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  { \"DMD_18\",
+    DMD_VERSION,
+    \"Stress Connect and Disconnect for 30 seconds\",
+    DMD_Disconnect_1
+  },
+  { \"DMD_21\",
+    DMD_VERSION,
+    \"Demod TestScenario 1\",
+    DMD_TestScenario_1
+  },
+}"
+                :type ("TSTHAL_unittest_def_t" type (:type "class") nil nil))
+                nil [131176 131436])
+            ("dmd_params_common" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  {\"unique_open\", TSTHAL_BOOL, {\"1\"}},
+  {\"dmd_id\", TSTHAL_INT, {\"0\"}},
+  {\"preferred_dmd_type\", TSTHAL_TUNER_TYPE_T, {\"0\"}}, /*TSTHAL_TUNER_DMD*/
+  {NULL, 0, {\"0\"}}
+}"
+                :type ("TSTHAL_param_t" type (:type "class") nil nil))
+                nil [131473 131693])
+            ("dmd_params_sat" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  {\"sat_del_frequency\", TSTHAL_INT, {\"11500000\"}},
+  {\"sat_del_symbol_rate\", TSTHAL_INT, {\"43978\"}},
+  {\"sat_del_modulation_system\", TSTHAL_DMD_MODULATION_SYSTEM_T, {\"1\"}},/* DMD_MODSYS_DVBS2*/
+  {\"sat_del_modulation\", TSTHAL_DMD_MODULATION_T, {\"2\"}}, /*DMD_MOD_8PSK*/
+  {\"sat_del_polarization\", TSTHAL_DMD_POLARIZATION_T, {\"1\"}}, /*DMD_PLR_HORIZONTAL*/
+  {\"sat_del_fec_rate\", TSTHAL_DMD_FEC_RATE_T, {\"256\"}}, /*DMD_FEC_3_5*/
+  {\"sat_del_roll_off\", TSTHAL_DMD_ROLLOFF_T, {\"0\"}}, /*DMD_ROLLOFF_035*/
+  {\"sat_del_lnb_tone_state\", TSTHAL_DMD_LNB_TONE_STATE_T, {\"2\"}}, /*DMD_LNB_TONE_22KHZ*/
+  {\"sat_del_diseqc_port\", TSTHAL_DMD_DISEQC_PORT_T, {\"2\"}}, /*DMD_DISEQC_PORTB*/
+  {\"sat_del_band_start\", TSTHAL_INT, {\"10700000\"}},
+  {\"sat_del_band_end\", TSTHAL_INT, {\"11800000\"}},
+  {\"sat_del_band_local_oscillator\", TSTHAL_INT, {\"9750000\"}},
+  {\"sat_del_band_downlink\", TSTHAL_DMD_DOWNLINK_T, {\"2\"}},
+
+  {\"sat_del_frequency2\", TSTHAL_INT, {\"11400000\"}},
+  {\"sat_del_symbol_rate2\", TSTHAL_INT, {\"13555\"}},
+  {\"sat_del_modulation_system2\", TSTHAL_DMD_MODULATION_SYSTEM_T, {\"1\"}},/* DMD_MODSYS_DVBS2*/
+  {\"sat_del_modulation2\", TSTHAL_DMD_MODULATION_T, {\"2\"}}, /*DMD_MOD_8PSK*/
+  {\"sat_del_polarization2\", TSTHAL_DMD_POLARIZATION_T, {\"1\"}}, /*DMD_PLR_HORIZONTAL*/
+  {\"sat_del_fec_rate2\", TSTHAL_DMD_FEC_RATE_T, {\"256\"}}, /*DMD_FEC_3_5*/
+  {\"sat_del_roll_off2\", TSTHAL_DMD_ROLLOFF_T, {\"0\"}}, /*DMD_ROLLOFF_035*/
+  {\"sat_del_lnb_tone_state2\", TSTHAL_DMD_LNB_TONE_STATE_T, {\"2\"}}, /*DMD_LNB_TONE_22KHZ*/
+  {\"sat_del_diseqc_port2\", TSTHAL_DMD_DISEQC_PORT_T, {\"2\"}}, /*DMD_DISEQC_PORTB*/
+  {\"sat_del_band_start2\", TSTHAL_INT, {\"10700000\"}},
+  {\"sat_del_band_end2\", TSTHAL_INT, {\"11800000\"}},
+  {\"sat_del_band_local_oscillator2\", TSTHAL_INT, {\"9750000\"}},
+  {\"sat_del_band_downlink2\", TSTHAL_DMD_DOWNLINK_T, {\"2\"}},
+  {\"sat_dmd_pwr\", TSTHAL_DMD_SOURCE_POWER_T, {\"0\"}},   /*DMD_SOURCE_POWER_OFF*/
+  {\"sat_frequency_no_signal\", TSTHAL_INT, {\"11200000\"}},
+
+  {\"sat_satcr_enable\",      TSTHAL_BOOL, {\"0\"}},
+  {\"sat_satcr_mode\",        TSTHAL_DMD_SATCR_MODE_T, {\"1\"}}, /*DMD_SATCR_SCD1*/
+  {\"sat_satcr_band\",        TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency1\",  TSTHAL_INT,  {\"1284000\"}},
+  {\"sat_satcr_frequency2\",  TSTHAL_INT,  {\"1400000\"}},
+  {\"sat_satcr_frequency3\",  TSTHAL_INT,  {\"1516000\"}},
+  {\"sat_satcr_frequency4\",  TSTHAL_INT,  {\"1632000\"}},
+  {\"sat_satcr_frequency5\",  TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency6\",  TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency7\",  TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency8\",  TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency9\",  TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency10\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency11\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency12\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency13\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency14\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency15\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency16\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency17\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency18\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency19\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency20\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency21\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency22\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency23\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency24\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency25\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency26\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency27\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency28\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency29\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency30\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency31\", TSTHAL_INT,  {\"0\"}},
+  {\"sat_satcr_frequency32\", TSTHAL_INT,  {\"0\"}},
+
+  {NULL, 0, {\"0\"}}
+}"
+                :type ("TSTHAL_param_t" type (:type "class") nil nil))
+                nil [131695 135472])
+            ("dmd_params_cab" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  {\"cable_del_frequency\", TSTHAL_INT, {\"474000\"}},
+  {\"cable_frequency_no_signal\", TSTHAL_INT, {\"492000\"}},
+  {\"cable_del_fec_rate_outer\", TSTHAL_DMD_FEC_RATE_OUTER_T, {\"0\"}}, /*DMD_FEC_OUTER_NONE*/
+  {\"cable_del_modulation\", TSTHAL_DMD_MODULATION_T, {\"64\"}}, /*DMD_MOD_64QAM*/
+  {\"cable_del_symbol_rate\", TSTHAL_INT, {\"3600\"}},
+
+  {\"cable_del_frequency2\", TSTHAL_INT, {\"482000\"}},
+  {\"cable_del_fec_rate_outer2\", TSTHAL_DMD_FEC_RATE_OUTER_T, {\"0\"}},/*DMD_FEC_OUTER_NONE*/
+  {\"cable_del_modulation2\", TSTHAL_DMD_MODULATION_T, {\"64\"}}, /*DMD_MOD_64QAM*/
+  {\"cable_del_symbol_rate2\", TSTHAL_INT, {\"4363\"}},
+  {NULL, 0, {\"0\"}}
+}"
+                :type ("TSTHAL_param_t" type (:type "class") nil nil))
+                nil [135474 136149])
+            ("dmd_params_terr" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  {\"terr_dvb_type\", TSTHAL_DMD_TERRESTRIAL_DVBTYPE_T, {\"0\"}},
+  {\"terr_del_frequency\", TSTHAL_INT, {\"474000\"}},
+  {\"terr_frequency_no_signal\", TSTHAL_INT, {\"492000\"}},
+  {\"terr_del_constellation\", TSTHAL_DMD_CONSTELLATION_T, {\"16\"}}, /*DMD_CONSTELLATION_64QAM*/
+  {\"terr_del_hierarchy\", TSTHAL_DMD_HIERARCHY_T, {\"1\"}},/*DMD_HIERARCHY_NONE*/
+  {\"terr_del_hp_lp\", TSTHAL_DMD_HIERARCHY_HPLP_T, {\"0\"}}, /*DMD_HIERARCHY_HP*/
+  {\"terr_del_HP_code_rate\", TSTHAL_DMD_FEC_RATE_T, {\"4\"}}, /*DMD_FEC_2_3*/
+  {\"terr_del_LP_code_rate\", TSTHAL_DMD_FEC_RATE_T, {\"4\"}}, /*DMD_FEC_2_3*/
+  {\"terr_del_guard_interval\", TSTHAL_DMD_GUARD_INTERVAL_T, {\"1\"}}, /*DMD_GUARD_INTERVAL_1_32*/
+  {\"terr_del_transmission_mode\", TSTHAL_DMD_TRANSMISSION_MODE_T, {\"4\"}}, /*DMD_TRANSMITION_8K*/
+  {\"terr_del_bandwidth\", TSTHAL_DMD_BANDWIDTH_T, {\"1\"}}, /*DMD_BANDWIDTH_8M*/
+
+  {\"terr_del_frequency2\", TSTHAL_INT, {\"482000\"}},
+  {\"terr_del_constellation2\", TSTHAL_DMD_CONSTELLATION_T, {\"16\"}}, /*DMD_CONSTELLATION_64QAM*/
+  {\"terr_del_hierarchy2\", TSTHAL_DMD_HIERARCHY_T, {\"1\"}}, /*DMD_HIERARCHY_NONE*/
+  {\"terr_del_hp_lp2\", TSTHAL_DMD_HIERARCHY_HPLP_T, {\"0\"}}, /*DMD_HIERARCHY_HP*/
+  {\"terr_del_HP_code_rate2\", TSTHAL_DMD_FEC_RATE_T, {\"4\"}}, /*DMD_FEC_3_4*/
+  {\"terr_del_LP_code_rate2\", TSTHAL_DMD_FEC_RATE_T, {\"4\"}}, /*DMD_FEC_3_4*/
+  {\"terr_del_guard_interval2\", TSTHAL_DMD_GUARD_INTERVAL_T, {\"1\"}}, /*DMD_GUARD_INTERVAL_1_32*/
+  {\"terr_del_transmission_mode2\", TSTHAL_DMD_TRANSMISSION_MODE_T, {\"4\"}}, /*DMD_TRANSMITION_8K*/
+  {\"terr_del_bandwidth2\", TSTHAL_DMD_BANDWIDTH_T, {\"1\"}}, /*DMD_BANDWIDTH_8M*/
+
+  {\"terr2_del_frequency\", TSTHAL_INT, {\"474000\"}},
+  {\"terr2_frequency_no_signal\", TSTHAL_INT, {\"492000\"}},
+  {\"terr2_del_plp_id\", TSTHAL_INT, {\"0\"}},
+  {\"terr2_T2_system_id\", TSTHAL_INT, {\"0\"}},
+
+  {\"terr2_del_guard_interval\", TSTHAL_DMD_GUARD_INTERVAL_T, {\"1\"}}, /*DMD_GUARD_INTERVAL_1_32*/
+  {\"terr2_del_transmission_mode\", TSTHAL_DMD_TRANSMISSION_MODE_T, {\"4\"}}, /*DMD_TRANSMITION_8K*/
+  {\"terr2_del_bandwidth\", TSTHAL_DMD_BANDWIDTH_T, {\"1\"}}, /*DMD_BANDWIDTH_8M*/
+
+  {\"terr2_del_frequency2\", TSTHAL_INT, {\"482000\"}},
+  {\"terr2_del_plp_id2\", TSTHAL_INT, {\"0\"}},
+  {\"terr2_T2_system_id2\", TSTHAL_INT, {\"0\"}},
+
+
+  {\"terr2_del_guard_interval2\", TSTHAL_DMD_GUARD_INTERVAL_T, {\"1\"}}, /*DMD_GUARD_INTERVAL_1_32*/
+  {\"terr2_del_transmission_mode2\", TSTHAL_DMD_TRANSMISSION_MODE_T, {\"4\"}}, /*DMD_TRANSMITION_8K*/
+  {\"terr2_del_bandwidth2\", TSTHAL_DMD_BANDWIDTH_T, {\"1\"}}, /*DMD_BANDWIDTH_8M*/
+  {\"terr_dmd_pwr\", TSTHAL_DMD_SOURCE_POWER_T, {\"0\"}}, /*DMD_SOURCE_POWER_OFF*/
+  {NULL, 0, {\"0\"}}
+}"
+                :type ("TSTHAL_param_t" type (:type "class") nil nil))
+                nil [136151 138762])
+            ("dmd_params_terr_scan" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  {\"terr_scan_start_freq\", TSTHAL_INT, {\"474000\"}},
+  {\"terr_scan_end_freq\", TSTHAL_INT, {\"820000\"}},
+  {\"terr_scan_step_freq\", TSTHAL_INT, {\"8000\"}},
+  {\"terr_scan_bandwidth\", TSTHAL_DMD_BANDWIDTH_T, {\"1\"}},
+  {\"terr2_scan_start_freq\", TSTHAL_INT, {\"474000\"}},
+  {\"terr2_scan_end_freq\", TSTHAL_INT, {\"820000\"}},
+  {\"terr2_scan_step_freq\", TSTHAL_INT, {\"8000\"}},
+  {\"terr2_scan_bandwidth\", TSTHAL_DMD_BANDWIDTH_T, {\"1\"}},
+  {NULL, 0, {\"0\"}}
+}"
+                :type ("TSTHAL_param_t" type (:type "class") nil nil))
+                nil [138764 139262])
+            ("dmd_config_open" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  {
+    \"dmd.common\",
+    \"Demod Common configuration\",
+    (TSTHAL_param_t *)&dmd_params_common
+  },
+  { NULL,NULL,NULL}
+}"
+                :type ("TSTHAL_module_config_t" type (:type "class") nil nil))
+                nil [139264 139446])
+            ("dmd_config_connect" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  {
+    \"dmd.common\",
+    \"Demod Common configuration\",
+    (TSTHAL_param_t *)&dmd_params_common
+  },
+  {
+    \"dmd.sat\",
+    \"Demod Satellite configuration\",
+    (TSTHAL_param_t *)&dmd_params_sat
+  },
+  {
+    \"dmd.cab\",
+    \"Demod Cable configuration\",
+    (TSTHAL_param_t *)&dmd_params_cab
+  },
+  {
+    \"dmd.terr\",
+    \"Demod Terrestrial configuration\",
+    (TSTHAL_param_t *)&dmd_params_terr
+  },
+  {
+    \"dmd.terr_scan\",
+    \"Demod Terrestrial scan configuration\",
+    (TSTHAL_param_t *)&dmd_params_terr_scan
+  },
+  { NULL,NULL,NULL}
+}"
+                :type ("TSTHAL_module_config_t" type (:type "class") nil nil))
+                nil [139448 140048])
+            ("dmd_config_scan" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  {
+    \"dmd.common\",
+    \"Demod Common configuration\",
+    (TSTHAL_param_t *)&dmd_params_common
+  },
+  {
+    \"dmd.terr_scan\",
+    \"Demod Terrestrial scan configuration\",
+    (TSTHAL_param_t *)&dmd_params_terr_scan
+  },
+  { NULL,NULL,NULL}
+}"
+                :type ("TSTHAL_module_config_t" type (:type "class") nil nil))
+                nil [140050 140350])
+            ("tsthal_DMD_module_open" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  \"DMD_OPEN\",
+  DMD_VERSION,
+  \"Test DMD Open/Close \",
+  dmd_config_open,
+  &dmd_module_auto,
+  dmd_unittests_open,
+  sizeof(dmd_unittests_open)/sizeof(TSTHAL_unittest_def_t),
+  TSTHAL_DMD_enums
+}"
+                :type ("TSTHAL_module_def_t" type (:type "class") nil nil))
+                nil [140376 140633])
+            ("tsthal_DMD_module_connect" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  \"DMD_CONNECT\",
+  DMD_VERSION,
+  \"Test DMD Connect\",
+  dmd_config_connect,
+  &dmd_module_auto,
+  dmd_unittests_connect,
+  sizeof(dmd_unittests_connect)/sizeof(TSTHAL_unittest_def_t),
+  TSTHAL_DMD_enums
+}"
+                :type ("TSTHAL_module_def_t" type (:type "class") nil nil))
+                nil [140635 140903])
+            ("tsthal_DMD_module_scan" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  \"DMD_SCAN\",
+  DMD_VERSION,
+  \"Test DMD Scan\",
+  dmd_config_scan,
+  &dmd_module_auto,
+  dmd_unittests_scan,
+  sizeof(dmd_unittests_scan)/sizeof(TSTHAL_unittest_def_t),
+  TSTHAL_DMD_enums
+}"
+                :type ("TSTHAL_module_def_t" type (:type "class") nil nil))
+                nil [140905 141155])
+            ("tsthal_DMD_module_events" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  \"DMD_EVENTS\",
+  DMD_VERSION,
+  \"Test DMD Events\",
+  dmd_config_connect,
+  &dmd_module_auto,
+  dmd_unittests_events,
+  sizeof(dmd_unittests_events)/sizeof(TSTHAL_unittest_def_t),
+  TSTHAL_DMD_enums
+}"
+                :type ("TSTHAL_module_def_t" type (:type "class") nil nil))
+                nil [141157 141420])
+            ("tsthal_DMD_module_stress" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  \"DMD_STRESS\",
+  DMD_VERSION,
+  \"Stress tests\",
+  dmd_config_connect,
+  &dmd_module_auto,
+  dmd_unittests_stress,
+  sizeof(dmd_unittests_stress)/sizeof(TSTHAL_unittest_def_t),
+  TSTHAL_DMD_enums
+}"
+                :type ("TSTHAL_module_def_t" type (:type "class") nil nil))
+                nil [141422 141682])
+            ("tsthal_DMD_modules" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+  &tsthal_DMD_module_open,
+  &tsthal_DMD_module_connect,
+  &tsthal_DMD_module_scan,
+  &tsthal_DMD_module_events,
+  &tsthal_DMD_module_stress,
+  NULL
+}"
+                :type ("TSTHAL_module_def_t" type (:type "class") nil nil))
+                nil [141706 141916])
+            ("TSTHAL_DMD_modulecontainer" variable
+               (:constant-flag t
+                :default-value "{
+  \"DMD\",
+  DMD_VERSION,
+  \"Test the functionalities of the DMD HAL\",
+  tsthal_DMD_modules,
+  tsthal_tuner_DMD_INIT
+}"
+                :type ("TSTHAL_modulecontainer_def_t" type (:type "class") nil nil))
+                nil [141953 142136]))          
+      :file "tsthal_dmd_tst.c"
+      :pointmax 142137
+      :fsize 142142
+      :lastmodtime '(23607 9337 615207 302000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DMD_VERSION" . ((string "\"1.9.0\"" 1354 . 1361)))
+          ("MAX_BUFFER_SIZE" . ((number "256" 1330 . 1333)))
+          ("EVENT_QUEUE_SIZE" . ((number "50" 1603 . 1605)))
+          )
+))
+  :file "!home!norbulak!coffee_workspace!HAL_23!SOURCE-WORKTREES!HALTST_DMD!projects!demod!src!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
