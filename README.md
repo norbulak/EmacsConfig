@@ -1,7 +1,6 @@
 Personal Emacs configuration based on http://tuhdo.github.io/c-ide.html
----
-Install 
---------
+
+Install :
 ```
 cd /home/<user>/.emacs.d/ 
 git clone 
