@@ -69,12 +69,12 @@
   (dtrt-indent-mode 1)
   (setq dtrt-indent-verbosity 0))
 
-;; Package: ws-butler
-(use-package ws-butler
-  :init
-  (add-hook 'prog-mode-hook 'ws-butler-mode)
-  (add-hook 'text-mode 'ws-butler-mode)
-  (add-hook 'fundamental-mode 'ws-butler-mode))
+;; ;; Package: ws-butler
+;; (use-package ws-butler
+;;   :init
+;;   (add-hook 'prog-mode-hook 'ws-butler-mode)
+;;   (add-hook 'text-mode 'ws-butler-mode)
+;;   (add-hook 'fundamental-mode 'ws-butler-mode))
 
 ;; PACKAGE: comment-dwim-2
 (use-package comment-dwim-2

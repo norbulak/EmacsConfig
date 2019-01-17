@@ -5,10 +5,14 @@
   (list
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
-      :tags nil
+      :tags 
+        '( ("main" function (:type "int") nil [1 14])
+            ("poil" function (:type "int") nil [19 33]))          
       :file "test.c"
-      :pointmax 1
+      :pointmax 34
+      :fsize 33
+      :lastmodtime '(23616 24589 900830 0)
       :unmatched-syntax nil))
-  :file "!home!norbulak!coffee_workspace!semantic.cache"
+  :file "!home!norbulak!.emacs.d!custom!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")
